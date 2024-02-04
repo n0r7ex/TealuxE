@@ -1,0 +1,52 @@
+//-----Body--------------------------------------------------
+body [data-scroll="false"] {
+	overflow: hidden;
+}
+body [data-scroll="true"] {
+	overflow: scroll;
+}
+body.menu-open {
+	overflow: hidden;
+}
+//-----Wrapper--------------------------------------------------
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+//===================CONTAINER============================
+
+[class*="__container"] {
+	max-width: 1220px;
+	margin: 0px auto;
+	padding: 0px 10px;
+}
+@media (max-width: 760px) {
+	[class*="__container"] {
+		max-width: 640px;
+	}
+}
+@media (max-width: 480px) {
+	[class*="__container"] {
+		max-width: 460px;
+	}
+}
+
+/*-------PC-------- */
+
+@media (max-width: 1000px) {
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 360px) {
+}
+// ==========Page=================================================
+.page {
+	flex: 1 1 auto;
+}
